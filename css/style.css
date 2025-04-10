@@ -1,0 +1,65 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+header {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.headshot {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+nav a {
+  color: #ffcc00;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.project-card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #001f3f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+form input, form textarea {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0.5rem auto;
+  padding: 0.75rem;
+}
+.socials a {
+  margin: 0 10px;
+  color: #001f3f;
+  font-weight: bold;
+}

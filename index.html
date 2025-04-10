@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jadon Freed | Data Scientist & Analyst</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadon Freed | Data Scientist</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="hero">
-    <div class="content">
-      <h1>Hi, I'm <span>Jadon Freed</span></h1>
-      <h2>Statistics & Data Science Enthusiast</h2>
-      <p>
-        I'm a senior at the University of Pittsburgh pursuing a Master's in Statistics, passionate about data analysis, machine learning, and connecting with others through technology and shared interests. Let's collaborate or connect!
-      </p>
-      <div class="buttons">
-        <a href="mailto:jadonfr17@gmail.com">Email Me</a>
-        <a href="https://www.linkedin.com/in/jadonfreed" target="_blank">Connect on LinkedIn</a>
-        <a href="Jadon_Freed_Resume.pdf" target="_blank">View My Resume</a>
-      </div>
+  <header id="home">
+    <div class="container">
+      <img src="assets/headshot.png" alt="Jadon Freed" class="headshot">
+      <h1>Jadon Freed</h1>
+      <p>Aspiring Data Scientist | Statistics Graduate | Passionate About Finding Meaning in Data</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <section class="projects">
-    <div class="content">
+  <section id="about" class="="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a Statistics Master's student at the University of Pittsburgh with minors in Computer Science and Economics.
+         My passion lies in analyzing data to uncover insights and create predictive models using tools like R and Python.
+         I'm experienced in time series analysis, regression modeling, and data wrangling. Beyond numbers, I enjoy volleyball, music, and youth ministry.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
       <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Disc Golf Performance Analysis</h3>
-        <p>A personal data analysis project using R to explore trends in my disc golf performance. Includes statistics on putting accuracy, driving distance, and round scores over time.</p>
-        <a href="disc_golf_analysis.html" target="_blank">View Analysis</a>
-      </div>
-
-      <div class="project">
-        <h3>GAN Stock Price Prediction</h3>
-        <p>Developed a hybrid model using a generative adversarial network and linear regression to predict stock prices using sentiment analysis. Featured in the USRESP competition.</p>
-      </div>
-
-      <div class="project">
-        <h3>Python Data Sampling Bot @ PNC</h3>
-        <p>Built a Python-based sampling automation tool with Pandas and NumPy to enhance QA on financial transaction reviews. Used Agile methodology and Jira tracking.</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>GAN Stock Price Prediction</h3>
+          <p>Hybrid model using GANs and linear regression to forecast stock prices based on sentiment analysis.</p>
+          <p><strong>Tools:</strong> Python, Pandas, NumPy</p>
+        </div>
+        <div class="project-card">
+          <h3>PNC Python Sampling Bot</h3>
+          <p>Developed a data sampling automation tool to help QA suspicious transaction investigations.</p>
+          <p><strong>Tools:</strong> Python, Pandas, NumPy</p>
+        </div>
+        <div class="project-card">
+          <h3>Survey Regression Models</h3>
+          <p>Built and interpreted logistic/linear regression models on qualitative survey data.</p>
+          <p><strong>Tools:</strong> R</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <section id="resume" class="section">
+    <div class="container">
+      <h2>Resume</h2>
+      <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <div class="socials">
+        <a href="mailto:jadonfr17@gmail.com">Email</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
