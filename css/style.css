@@ -3,74 +3,121 @@ body {
   margin: 0;
   background: #f8f9fa;
   color: #333;
+  line-height: 1.6;
 }
+
 .container {
-  max-width: 1000px;
+  max-width: 960px;
   margin: auto;
   padding: 0 1rem;
-}
-header {
-  background: #001f3f;
-  color: white;
   text-align: center;
-  padding: 2rem 1rem;
 }
-.headshot {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 3px solid #fff;
+
+header {
+  background: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 nav a {
-  color: #ffcc00;
-  margin: 0 10px;
+  color: #001f3f;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
+
+nav a:hover {
+  color: #007BFF;
+}
+
 .section {
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
 }
+
+#hero {
+  background: #fff;
+  padding-top: 2rem;
+}
+
+.headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #001f3f;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #001f3f;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.socials a {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #007BFF;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #001f3f;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
+
 .project-card {
   background: white;
-  padding: 1rem;
-  border: 1px solid #ccc;
+  padding: 1.5rem;
   border-radius: 8px;
-  width: 300px;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
+
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+
+.project-card h3 {
+  color: #001f3f;
+  margin-top: 0;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.8rem 2rem;
   background: #001f3f;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
-form input, form textarea {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  margin: 0.5rem auto;
-  padding: 0.75rem;
-}
-.socials {
-  margin-top: 1rem;
-}
-.socials a {
-  margin: 0 0.5rem;
-  padding: 0.6rem 1.2rem;
-  background: #001f3f;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  display: inline-block;
+
+.btn:hover {
+  background-color: #003366;
 }
